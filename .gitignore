@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Lambda zips
+*.zip
+
+# AWS credentials (never commit)
+.env
+.env.*
+credentials
+
+# LocalStack data
+data/
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.swp

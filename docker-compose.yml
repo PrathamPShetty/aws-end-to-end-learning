@@ -1,0 +1,13 @@
+services:
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3,sqs,sns,dynamodb,lambda,iam,ec2,sts
+      - DEBUG=0
+      - PERSISTENCE=1
+      - LOCALSTACK_AUTH_TOKEN=ls-gUjE0494-zUPI-kUca-qUzo-4348vuFI0fe4
+    volumes:
+      - ./data:/var/lib/localstack
+      - /var/run/docker.sock:/var/run/docker.sock
